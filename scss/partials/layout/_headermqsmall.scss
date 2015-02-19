@@ -105,9 +105,13 @@
 		top: 0; bottom: 0; 
 		right: 0; 
 		ul {
-			position: relative;
+			// position: relative;
+			position: fixed;
 			top: $xsmallHeaderSize; //$xsmallHeaderSize + $headerFooterLineBreakSize;
+			left: 0;
+			right: 0;
 			width: 100vw;
+
 			z-index: 1;
 		}
 		li {
