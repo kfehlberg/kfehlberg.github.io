@@ -1,0 +1,203 @@
+//==========================================================================
+// 1.0
+//==========================================================================
+
+@mixin non-retina-mq {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.0), 
+			only screen and (min-resolution: 96dpi), 
+			only screen and (min-resolution: 1.0dppx) {
+				@content;
+	}
+}
+@mixin mq-xsmall-max1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and ( max-width: $bp-xsmall-max ),
+			only screen and (min-resolution: 96dpi) 			and ( max-width: $bp-xsmall-max ),
+			only screen and (min-resolution: 1dppx) 			and ( max-width: $bp-xsmall-max ) 	{
+				@content;
+	}
+}
+@mixin mq-small-min1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: $bp-small-min),
+			only screen and (min-resolution: 96dpi) 			and (min-width: $bp-small-min),
+			only screen and (min-resolution: 1dppx) 			and (min-width: $bp-small-min) 	{
+				@content;
+	}
+}
+@mixin mq-small-min2max1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: $bp-small-min) and (max-width: $bp-small-max),
+			only screen and (min-resolution: 96dpi) 			and (min-width: $bp-small-min) and (max-width: $bp-small-max),
+			only screen and (min-resolution: 1dppx) 			and (min-width: $bp-small-min) and (max-width: $bp-small-max)  	{
+				@content;
+	} 
+}
+@mixin mq-small-max1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and ( max-width: $bp-small-max ),
+			only screen and (min-resolution: 96dpi) 			and ( max-width: $bp-small-max ),
+			only screen and (min-resolution: 1dppx) 			and ( max-width: $bp-small-max ) 	{
+				@content;
+	}
+}
+@mixin mq-small-min2medium-max1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: $bp-small-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 96dpi) 			and (min-width: $bp-small-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 1dppx) 			and (min-width: $bp-small-min) and (max-width: $bp-medium-max)  	{
+				@content;
+	}
+}
+@mixin mq-medium-min1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and ( min-width: $bp-medium-min ),
+			only screen and (min-resolution: 96dpi) 			and ( min-width: $bp-medium-min ),
+			only screen and (min-resolution: 1dppx) 			and ( min-width: $bp-medium-min )	{
+				@content;
+	}
+}
+@mixin mq-medium-min2max1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: $bp-medium-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 96dpi) 			and (min-width: $bp-medium-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 1dppx) 			and (min-width: $bp-medium-min) and (max-width: $bp-medium-max)  	{
+				@content;
+	}
+}
+@mixin mq-large-min1x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 1) and ( min-width: $bp-large-min ),
+			only screen and (min-resolution: 96dpi) 			and ( min-width: $bp-large-min ),
+			only screen and (min-resolution: 1dppx) 			and ( min-width: $bp-large-min )	{
+				@content;
+	}
+}
+
+//==========================================================================
+// 2.0
+//==========================================================================
+
+@mixin retina-2x-mq {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2), 
+			only screen and (min-resolution: 192dpi), 
+			only screen and (min-resolution: 2dppx) {
+				@content;
+	}
+}
+@mixin mq-xsmall-max2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: $bp-xsmall-max ),
+			only screen and (min-resolution: 192dpi) 			and ( max-width: $bp-xsmall-max ),
+			only screen and (min-resolution: 2dppx) 			and ( max-width: $bp-xsmall-max ) 	{
+				@content;
+	}
+}
+@mixin mq-small-min2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $bp-small-min),
+			only screen and (min-resolution: 192dpi) 			and (min-width: $bp-small-min),
+			only screen and (min-resolution: 2dppx) 			and (min-width: $bp-small-min) 	{
+				@content;
+	}
+}
+@mixin mq-small-min2max2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $bp-small-min) and (max-width: $bp-small-max),
+			only screen and (min-resolution: 192dpi) 			and (min-width: $bp-small-min) and (max-width: $bp-small-max),
+			only screen and (min-resolution: 2dppx) 			and (min-width: $bp-small-min) and (max-width: $bp-small-max)  	{
+				@content;
+	} 
+}
+@mixin mq-small-max2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: $bp-small-max ),
+			only screen and (min-resolution: 192dpi) 			and ( max-width: $bp-small-max ),
+			only screen and (min-resolution: 2dppx) 			and ( max-width: $bp-small-max ) 	{
+				@content;
+	}
+}
+@mixin mq-small-min2medium-max2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $bp-small-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 192dpi) 			and (min-width: $bp-small-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 2dppx) 			and (min-width: $bp-small-min) and (max-width: $bp-medium-max)  	{
+				@content;
+	}
+}
+@mixin mq-medium-min2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: $bp-medium-min ),
+			only screen and (min-resolution: 192dpi) 			and ( min-width: $bp-medium-min ),
+			only screen and (min-resolution: 2dppx) 			and ( min-width: $bp-medium-min )	{
+				@content;
+	}
+}
+@mixin mq-medium-min2max2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $bp-medium-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 192dpi) 			and (min-width: $bp-medium-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 2dppx) 			and (min-width: $bp-medium-min) and (max-width: $bp-medium-max)  	{
+				@content;
+	}
+}
+@mixin mq-large-min2x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: $bp-large-min ),
+			only screen and (min-resolution: 192dpi) 			and ( min-width: $bp-large-min ),
+			only screen and (min-resolution: 2dppx) 			and ( min-width: $bp-large-min )	{
+				@content;
+	}
+}
+//==========================================================================
+// 3.0
+//==========================================================================
+@mixin retina-3x-mq {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3), 
+			only screen and (min-resolution: 288dpi), 
+			only screen and (min-resolution: 3dppx) {
+				@content;
+	}
+}
+@mixin mq-xsmall-max3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and ( max-width: $bp-xsmall-max ),
+			only screen and (min-resolution: 288dpi) 			and ( max-width: $bp-xsmall-max ),
+			only screen and (min-resolution: 3dppx) 			and ( max-width: $bp-xsmall-max ) 	{
+				@content;
+	}
+}
+@mixin mq-small-min2max3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and (min-width: $bp-small-min) and (max-width: $bp-small-max),
+			only screen and (min-resolution: 288dpi) 			and (min-width: $bp-small-min) and (max-width: $bp-small-max),
+			only screen and (min-resolution: 3dppx) 			and (min-width: $bp-small-min) and (max-width: $bp-small-max)  	{
+				@content;
+	} 
+}
+@mixin mq-small-min3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and (min-width: $bp-small-min),
+			only screen and (min-resolution: 288dpi) 			and (min-width: $bp-small-min),
+			only screen and (min-resolution: 3dppx) 			and (min-width: $bp-small-min) 	{
+				@content;
+	}
+}
+@mixin mq-small-max3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and ( max-width: $bp-small-max ),
+			only screen and (min-resolution: 288dpi) 			and ( max-width: $bp-small-max ),
+			only screen and (min-resolution: 3dppx) 			and ( max-width: $bp-small-max ) 	{
+				@content;
+	}
+}
+@mixin mq-small-min2medium-max3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and (min-width: $bp-small-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 288dpi) 			and (min-width: $bp-small-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 3dppx) 			and (min-width: $bp-small-min) and (max-width: $bp-medium-max)  	{
+				@content;
+	}
+}
+
+@mixin mq-medium-min3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and ( min-width: $bp-medium-min ),
+			only screen and (min-resolution: 288dpi) 			and ( min-width: $bp-medium-min ),
+			only screen and (min-resolution: 3dppx) 			and ( min-width: $bp-medium-min )	{
+				@content;
+	}
+}
+@mixin mq-medium-min2max3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and (min-width: $bp-medium-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 288dpi) 			and (min-width: $bp-medium-min) and (max-width: $bp-medium-max) ,
+			only screen and (min-resolution: 3dppx) 			and (min-width: $bp-medium-min) and (max-width: $bp-medium-max)  	{
+				@content;
+	}
+}
+@mixin mq-large-min3x {
+	@media 	only screen and (-webkit-min-device-pixel-ratio: 3) and ( min-width: $bp-large-min ),
+			only screen and (min-resolution: 288dpi) 			and ( min-width: $bp-large-min ),
+			only screen and (min-resolution: 3dppx) 			and ( min-width: $bp-large-min )	{
+				@content;
+	}
+}
+//==========================================================================

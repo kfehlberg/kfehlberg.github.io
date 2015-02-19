@@ -1,0 +1,37 @@
+// //==========================================================================
+#work_list { // (#works .content ul)
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.work_it { // (#works .content ul li)
+	display: inline-block;
+	position: relative;
+	margin: $colMargin;
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: transparent;
+		&:hover, &:focus, &:active {
+			background: $color5;
+			.work_cap {
+				background: $color2;
+			}
+		}
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		// z-index: 1; //relative to the z-index of .work_cap in medium+ screens
+	}
+}
+.work_cap { //#works .content ul lu a div
+	padding: ($h4FontSize / 2) 0;
+	width: 100%;
+	color: $color1;
+	-webkit-font-smoothing: antialiased; 
+	width: $col4; // no meq available in ie8- this is alternative
+}
+

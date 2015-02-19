@@ -1,0 +1,36 @@
+/*  *********************************
+    FOOTER
+    ***********************************/
+$footerItemPadding: 0 $fontSize20;
+footer {
+    background: $color2;
+    // position: absolute;
+    position: relative;
+    display: block;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: $footerSize;
+    line-height: $footerSize;
+    // &:before {
+    //     content: " ";
+    //     background: $color1;
+    //     // background: $color2;
+    //     position: absolute;
+    //     left: 0; right: 0;
+    //     margin: 0 auto;
+    //     height: $headerFooterLineBreakSize;
+    //     width: 100%;   
+    // }
+    li {
+        display: inline-block;
+        &:nth-of-type(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: $footerItemPadding;
+        }
+        & a {
+           padding: $footerItemPadding; 
+        }
+    }
+}

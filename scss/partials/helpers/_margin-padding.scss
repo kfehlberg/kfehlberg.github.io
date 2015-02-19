@@ -1,0 +1,51 @@
+
+$standardTextPaddingUnit: $fontSize18;
+$moreTextPaddingUnit: $standardTextPaddingUnit * 2;
+// $sectionPadding: $fontSize8;
+
+// %noTopBottomPadding {
+// 	padding-bottom: 0;
+// 	padding-top: 0;
+// }
+
+
+
+
+
+
+%paddingSides1em { padding: 0 1em; }
+%typeStandardPadding { padding: 0 $standardTextPaddingUnit; }
+	%typeStandardPadding-and-TopBottom { padding: 0.25em $standardTextPaddingUnit; }
+%typeMorePadding { padding: 0 $moreTextPaddingUnit; }
+%noPadding { padding: 0; }
+
+%noMargin { margin: 0; }
+%autoMargin { margin: auto; }
+%centerMargin { margin: 0 auto; }
+%typeStandardMargin { margin: 0.5em auto; }
+
+
+%noMarginPadding {
+	margin: 0px;
+	padding: 0px;
+}
+
+// $h2
+
+
+
+%hPadding {
+	@extend %typeStandardPadding-and-TopBottom;
+	// @extend %noMargin;
+	// margin: 0.25em 0;
+	// background: pink;
+	// @extend %typeStandardPadding;
+	// line-height: 
+	// vertical-align: center;
+	// display: block;
+}
+
+%typeStandardMarginPadding {
+    @extend %typeStandardMargin;
+    @extend %typeStandardPadding;
+}

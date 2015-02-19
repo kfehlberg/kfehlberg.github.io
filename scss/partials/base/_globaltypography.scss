@@ -1,0 +1,289 @@
+
+
+//==========================================================================
+// FONT AND TYPOGRAPHY
+//========================================================================== 
+
+    // ---------- General Settings ----------
+    $letterSpacingNormal: normal;
+    $letterSpacingMedium: 0.015em;
+    $letterSpacingMore: 0.025em;
+
+    // %typeSpacingStandard {
+    //     // letter-spacing: $letterSpacingNormal;
+    //     // line-height: $lineHeight;
+    // }
+
+    %textCenter { text-align: center; }
+
+    %allCaps { 
+        letter-spacing: $letterSpacingMore;
+        text-transform: uppercase;
+    }
+    // // ---------- Font Families ----------
+    %primaryNavFont {
+        @extend %secondaryFontRegular;
+        @extend %allCaps;
+    }
+    %secondaryNavFont {
+        @extend %primaryNavFont;
+    }
+    %naviconFont {
+        @extend %secondaryFontRegular;
+        @extend %allCaps;
+    }
+    %bodyFont {
+        @extend %primaryFontRegular;
+    }
+    %bodyFontBold {
+        @extend %primaryFontBold
+    }
+    %linkFont {
+        @extend %primaryFontBold;
+    }
+
+    // ---------- Font Colors ----------
+
+    %lightTextOnDarkBg { -webkit-font-smoothing: antialiased; }
+    %darkTextOnLightBg { -webkit-font-smoothing: subpixel-antialiased; }
+
+    %lightLinkFontColor { 
+        @extend %lightTextOnDarkBg;
+        color: $color1;
+        &:hover, &:focus { 
+            // @extend %darkTextOnLightBg;
+            color: $accentColor1; 
+            border-color: $accentColor1;
+        } 
+        &:active { 
+            // @extend %darkTextOnLightBg;
+            color: $darkAccentColor1;
+            border-color: $darkAccentColor1;
+        }
+    }  
+    %darkLinkFontColor {
+        color: $color2;
+        &:hover,
+        &:focus { color: $accentColor1;  } 
+        &:active { color: $darkAccentColor1; ; }
+    }
+    %darkLinkFontColor2 {
+        color: $color2;
+        &:hover,
+        &:focus { 
+            @extend %lightTextOnDarkBg;
+            color: $color1; 
+        } 
+        &:active { 
+            @extend %lightTextOnDarkBg;
+            color: $color5; 
+        }
+    }
+
+    // %navLinkFontColor { @extend %darkLinkFontColor; } 
+    // %contactLinkFontColor { @extend %darkLinkFontColor; } 
+
+
+    // // ---------- Text Shadows ----------
+
+    // %lightTextShadow { text-shadow: 1px 1px 1px $color2; }
+    // %darkTextShadow { text-shadow: 1px 1px 1px $color1; }
+    // %accentColorTextShadow { text-shadow: 1px 1px 1px $accentColor1; }
+
+    // %lightLinkTextShadow {
+    //     @extend %lightTextShadow;
+    //     &:hover, &:focus, &:active { @extend %darkTextShadow; }
+    // }
+    // %darkLinkTextShadow {
+    //     @extend %accentColorTextShadow;
+    //     &:hover, &:focus, &:active { @extend %lightTextShadow; } 
+    // }
+    // %darkLinkTextShadow2 {
+    //     @extend %darkTextShadow;
+    //     &:hover, &:focus, &:active { @extend %lightTextShadow; } 
+    // }
+
+
+//==========================================================================
+// APPLIED STYLES
+//========================================================================== 
+body { 
+    @extend %primaryFontRegular;
+    // text-rendering: optimizeLegibility; 
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacingNormal;
+    color: $color2;
+    font-size: $pFontSize;
+}
+p {
+    @extend %primaryFontRegular;
+    font-size: $pFontSize;
+    margin: 0.5em 0;
+    padding: 0;
+    .work_cap & {
+        font-size: $captionFontSize;
+        padding: 0;
+        margin: 0;
+    }
+    p + & {
+        margin-top: 1em;
+    }
+}
+// p, li#copyright{
+//     // @extend %bodyFont;
+//     // color: $color1;
+// }
+// li#copyright{
+//     // letter-spacing: $letterSpacingNormal;
+//     font-size: $captionFontSize;
+// }
+// #contact ul {
+//     @extend %typeStandardMarginPadding;
+//     // background: green;
+// }
+
+// form, label {
+//     // @extend %typeSpacingStandard;
+//     @extend %bodyFontBold;
+//     @extend %pFontSize;
+// }
+
+// input, textarea {
+//     // @extend %typeSpacingStandard;
+//     @extend %bodyFont;
+//     @extend %pFontSize;
+//     // font-size: $
+//     // line-height: 2;
+//     // @extend %typeStandardMarginPadding;
+// }
+/*section headings*/
+h1, h2, h3 {
+    line-height: 1.2;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0; // close the gap between different sections
+}
+h1 {
+    @extend %primaryFontRegular;
+    font-size: $h1FontSize;
+    // text-align: center;
+}
+h2 {
+    @extend %secondaryFontRegular;
+    @extend %allCaps;
+    font-size: $h2FontSize;
+
+    margin: 0.5em 0;
+    // text-align: center;
+}
+h3 { 
+    @extend %secondaryFontRegular;
+    font-size: $h3FontSize;
+    margin: 0.5em 0;
+    // #about & {
+    //     text-align: left;
+    // }
+}
+h4 {
+    @extend %secondaryFontRegular;
+    @extend %allCaps;
+    font-size: $h4FontSize;
+}
+h5 { 
+    @extend %secondaryFontRegular;
+    @extend %allCaps;
+    font-size: $h5FontSize;
+}
+h6 { 
+    @extend %secondaryFontRegular;
+    @extend %allCaps;
+    font-size: $h6FontSize;
+}
+
+
+/*  *********************************
+    LINK STYLES
+    ***********************************/
+
+// ---------- General Links ----------
+
+%link {
+    // letter-spacing: $letterSpacingNormal;
+    text-decoration: none;
+    &:hover, &:active { cursor: pointer; }
+}
+p a {
+    @extend %fontWeightBold;
+    color: $color2;
+    &:hover { color: $accentColor1; }
+    &:active { color: $darkAccentColor1; }
+}
+a {
+    @extend %link;
+    @extend %linkFont;
+    #nav & {
+        // @extend %link;
+        @extend %primaryNavFont;
+        @extend %darkLinkFontColor;
+        font-size: $navFontSize;
+        text-align: center;
+    }
+    //*COLLAPSED NAV MENU AND ICON FOR SMALL DISPLAYS*/
+    #nav > & {
+        line-height: $xsmallHeaderSize;
+        &:hover{ cursor:context-menu; }
+    }
+    footer & {
+        // @extend %link;
+        @extend %secondaryNavFont;
+        @extend %allCaps;
+        @extend %lightLinkFontColor;
+        @extend %lightTextOnDarkBg;
+        font-size: $navFontSize;
+    }
+    .work_it & {
+        // @extend %link;
+        // @extend %darkLinkFontColor;
+        // @extend %lightLinkFontColor;
+        // @extend %lightTextOnDarkBg;
+        // color: $color1;
+        // color: 
+        text-align: center;
+    }
+    #contact & {
+        // @extend %link;
+        // @extend %linkFont;
+        @extend %darkLinkFontColor;
+    }
+}
+// .button a, .button button, .contact_button a {
+//     @extend %secondaryNavFont;
+//     font-size: $fontSize18;
+//     padding: 0.75em 2em;
+//     border: 1px solid;
+//     border-radius: 2px;
+// }
+.button a, 
+.button button, 
+.contact_button a {
+    // @extend %secondaryNavFont;
+    font-size: $fontSize18;
+    padding: 0.75em 2em;
+    border: 1px solid;
+    border-radius: 2px;
+}
+.button a, 
+.button button {
+    @extend %secondaryNavFont;
+}
+
+.contact_button a { 
+    @extend %primaryFontBold; 
+}
+
+
+
+
+

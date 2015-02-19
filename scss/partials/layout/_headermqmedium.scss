@@ -1,0 +1,32 @@
+@include mq-medium-min {
+	header { height: $mediumHeaderSize; }
+	#logo_container {
+		display: inline-block; //on same line as nav bar
+		width: $mediumHeaderSize; //create square proportions
+		padding: $fontSize4; //same as faux margin on right of nav bar
+	}
+	#nav {
+		position: absolute;
+		top: 0; right: $fontSize4; // push to the right, with a small faux-margin same size as logo padding
+		display: inline-block; //on same line as logo
+		li {
+			display: inline-block; //horizontal nav bar
+			a {
+				display: block;
+				height: $mediumNavLineHeight;
+				line-height: $mediumNavLineHeight;
+				margin: 0 $fontSize4;
+				padding: 0 0.25em;
+			}
+			// when page is active, add .current to the corresponding <a> in appropriate .html file
+			a.current {
+				color: $accentColor1;
+				// border-bottom: solid $headerFooterLineBreakSize $accentColor1;
+			}
+		}
+	}
+	.hide_mobile {
+		display: block;
+		background: pink;
+	}
+}

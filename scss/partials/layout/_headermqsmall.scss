@@ -1,0 +1,137 @@
+//================================================
+// Header and Nav for x-small screens.
+//	*for browsers that support mediaqueries - cannot be used in IE8
+//	*nav is collapsed into navicon
+//================================================
+// @include mq-xsmall-max {
+@include mq-small-max {
+	//================================================
+	// EXTENDERS
+	//================================================
+	%linkBgAccent1 {
+		background: $color1;
+		&:hover, &:focus { 
+			background: $color6; 
+			color: $color2;
+		}
+		&:active { background: $color3; }
+	}
+	%navListButtons {
+		@extend %linkBgAccent1;
+		border-bottom: $fontSize2 solid $color5;
+		display: block;
+		line-height: $xsmallHeaderSize;
+		height: $xsmallHeaderSize;
+		padding: 0;
+	}
+	%lastNavListButton {
+		position: fixed;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		z-index: -1;
+		a {
+			background: $transparentColor2;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	// %naviconButton {
+	// 	& > a {
+	// 		@extend %linkBgAccent1;
+	// 		background: red;
+	// 		padding-right: $naviconSize + ( $naviconPadding * 2 );
+	// 		padding-left: ( $naviconPadding * 2 ) ;
+	// 		position: absolute;
+	// 		right: 0;
+	// 		height: $xsmallHeaderSize;
+	// 		border-left: 1px solid $color5;
+	// 		&:after {
+	// 			background: blue;
+	// 			content: url(../images/icons/menu_icon.svg);
+	// 			position: absolute;
+	// 			display: block;
+	// 			right: $naviconPadding ;
+	// 			top: $naviconPadding ;
+	// 			margin: auto;
+	// 			width: $naviconSize;
+	// 			height: $naviconSize;
+	// 		}
+	// 	}
+	// }
+	%naviconButton {
+		& > a {
+			@extend %linkBgAccent1;
+			padding-right: $naviconSize + ( $naviconPadding * 1.5 );
+			padding-left: $naviconPadding;
+			position: absolute;
+			right: 0;
+			height: $xsmallHeaderSize;
+			border-left: 1px solid $color5;
+			&:after {
+				content: " ";
+				position: absolute;
+				display: block;
+				right: $naviconPadding;
+				top: $naviconPadding; 
+				width: $naviconSize;
+				height: $naviconSize;
+				background:  url(../images/icons/menu_icon.svg)no-repeat center; 
+           		background-size: contain;
+			}
+		}
+	}
+	//================================================
+	// Header
+	//================================================
+	header {
+	    height: $xsmallHeaderSize;
+	    background: $color1;
+	}
+	//================================================
+	// Logo
+	//================================================
+	#logo_container {
+		display: inline-block;
+		width: $xsmallHeaderSize;
+		padding: $fontSize6;
+	}
+	//================================================
+	// Nav
+	//================================================
+	#nav {
+		@extend %naviconButton;
+		display: inline-block;
+		position: absolute;
+		top: 0; bottom: 0; 
+		right: 0; 
+		ul {
+			position: relative;
+			top: $xsmallHeaderSize; //$xsmallHeaderSize + $headerFooterLineBreakSize;
+			width: 100vw;
+			z-index: 1;
+		}
+		li {
+			display: block;
+			a { @extend %navListButtons; }
+			// &:last-of-type a { @extend %lastNavListButton; }
+			&:last-of-type { @extend %lastNavListButton; }
+			
+		}
+	}
+	//================================================
+	// Nav before user clicks on icon
+	//================================================
+	#nav:not( :target ) {
+		& > a:first-of-type { display: inline-block; }
+		ul { display: none; }
+	}
+	//================================================
+	// Nav when user clicks on icon
+	//================================================
+	#nav:target {
+		& > a:last-of-type { display: inline-block; z-index: 2; }
+		ul { display: block; }
+		li:last-of-type { display: block; } //is display: none in _header.scss (this overrides that)
+	}
+}
+

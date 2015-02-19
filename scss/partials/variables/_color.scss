@@ -1,0 +1,110 @@
+//================================================
+// COLOR BASE VARIABLES
+//================================================
+
+
+    // //VIEW OVER THE TOWN
+    // $color1: rgb(255, 83, 53);
+    // $color2: rgb(179, 156, 133);
+    // $color3: rgb(48, 110, 115);
+    // $color4: rgb(59, 66, 77);
+    // $color5: rgb(29, 24, 31);
+
+    $color1: rgb(242, 242, 242);
+    $color2: rgb(40,40,40);
+    $color3: rgb(80,80,80); //  #505050
+    $color4: rgb(140,140,140);
+    $color5: rgb(200,200,200);
+    $color6: rgb(220,220,220) ;
+$accentColor1: #7FB8B0;//#8F4D65;//#DCEDC2;//#A8E6CE;// #048091;
+    // $accentColor1: rgb(150,180,156);
+    // $accentColor1: #87b09e;
+    // $accentColor1: #a3c2b3;
+    // $accentColor1: #c3d5cb;
+    // $accentColor1: #bed0c3;
+
+
+
+    // //MIXED CANDY
+    // $color1: rgb(195,44,72); //   #C32C48; 
+    // $color2: rgb(253,125,80); //   #FD7D50; 
+    // $color3: rgb(255,177,84); //   #FFB154;
+    // $color4: rgb(240,231,196); //   #F0E7C4;
+    // $color5: rgb(81,148,142); //    #51948E;
+
+    ////FINE AND MELLOW
+    // $color1:#fff4c2;
+    // $color2:#cdd1a4;
+    // $color3:#99ca9f;
+    // $color4:#614842;
+    // $color5:#3b2828;
+
+    ////PEACHES AND MINT
+    // $color1: rgb(113, 169, 106);
+    // $color2: rgb(163, 195, 68);Ï
+    // $color3: rgb(133, 138, 116);
+    // $color4: rgb(255, 77, 75);
+    // //    rgb(242, 71, 56);
+    // $color5: rgb(248, 141, 105);
+
+    ////200_CL_friends
+    // $color1: rgb(241,232,180); //   #F1E8B4; 
+    // $color2: rgb(178,187,145); //   #B2BB91; 
+    // $color3: rgb(215,191,94); //   #D7BF5E;
+    // $color4: rgb(209,99,68); //   #D16344;
+    // $color5: rgb(131,85,94); //    #83555E;
+
+    ////PIMAVERA
+    // $color1: rgb(204,93,76); //   #CC5D4C; 
+    // $color2: rgb(255,254,198); //   #FFFEC6; 
+    // $color3: rgb(199,209,175); //   #C7D1AF;
+    // $color4: rgb(150,180,156); //   #96B49C;
+    // $color5: rgb(91,88,71); //    #5B5847;
+//================================================
+// COLOR ALTERATED VARIABLES
+//================================================
+
+    $lightestAccentColor1: lighten( $accentColor1, 45%);
+    $lighterAccentColor1: lighten( $accentColor1, 30%);
+    $lightAccentColor1: lighten( $accentColor1, 15%);
+    $darkAccentColor1: darken( $accentColor1, 15%);
+    $transparentLightestAccentColor1: transparentize($lightestAccentColor1, 0.4);
+    $transparentLighterAccentColor1: transparentize($lighterAccentColor1, 0.4);   
+    $transparentLightAccentColor1: transparentize($lightAccentColor1, 0.4);
+    $transparentAccentColor1: transparentize($accentColor1, 0.4);
+    $transparentDarkAccentColor1: transparentize($darkAccentColor1, 0.4);
+
+    $lightColor1: lighten($color1, 15%);
+    $lighterColor1: lighten($color1, 30%);
+    $lightestColor1: lighten($color1, 45%);
+
+    $darkColor1: darken($color1, 15%);
+    $transparentColor1: transparentize($color1, 0.4);
+
+    $lightColor2: lighten($color2, 15%);
+    $lighterColor2: lighten($color2, 30%);
+    $lightestColor2: lighten($color2, 45%);
+
+    $darkColor2: darken($color2, 15%);
+    $transparentColor2: transparentize($color2, 0.4);
+
+    $lightColor3: lighten($color3, 15%);
+    $lighterColor3: lighten($color3, 30%);
+    $lightestColor3: lighten($color3, 45%);
+
+    $darkColor3: darken($color3, 15%);
+    $transparentColor3: transparentize($color3, 0.4);
+
+    $lightColor4: lighten($color4, 15%);
+    $lighterColor4: lighten($color4, 30%);
+    $lightestColor4: lighten($color4, 45%);
+
+    $darkColor4: darken($color4, 15%);
+    $transparentColor4: transparentize($color4, 0.4);
+
+    $lightColor5: lighten($color5, 15%);
+    $lighterColor5: lighten($color5, 30%);
+    $lightestColor5: lighten($color5, 45%);
+
+    $darkColor5: darken($color5, 15%);
+    $transparentColor5: transparentize($color5, 0.4);

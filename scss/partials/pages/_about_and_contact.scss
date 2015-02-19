@@ -1,0 +1,61 @@
+#kfphoto {
+    max-width: 400px;
+    padding: 0 $h3FontSize $h3FontSize $h3FontSize;
+    margin: 0 auto;
+    img { 
+        display: block;
+        border-radius: 100%;
+    }
+}
+
+
+#aboutme, 
+#aboutsite, 
+#contact h2,
+#contact p, 
+.contact_button {
+    margin: $colMargin;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+#contact h2 {
+    width: $col12;
+}
+@include mq-small-max {
+	#aboutme, 
+    #aboutsite, 
+    #contact p, 
+    .contact_button {
+		width: $col12;
+	}
+}
+@include mq-medium-min2max {
+
+	#about .content,
+	#contact .content {
+		max-width: $pFontSize * 30;
+		margin: 0 auto;
+	}
+
+}
+@include mq-medium-max {
+    #contact .content {
+        text-align: center;
+    }
+}
+//==========================================================================
+@include mq-large-min {
+    #contact p, 
+    #aboutme  { 
+        width: $col7; 
+    }
+    .contact_button,  
+    #aboutsite {
+        width: $col5;
+    }
+    .contact_button {
+        text-align: right;
+    }
+
+}

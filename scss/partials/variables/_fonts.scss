@@ -1,0 +1,87 @@
+//==========================================================================
+//FONT-FAMILY
+//========================================================================== 
+// font-family: 'Oswald', sans-serif;
+// $primaryFontFamily: "museo-sans", "Verdana", "Gill Sans", "Lucida Grande", "Helvetica", sans-serif;
+//     //museo-sans options 300 and 500
+// $secondaryFontFamily:"museo", "Palatino", "Hoefler Text", "Baskerville", "Georgia", serif;
+//     //museo, options: 300 and 500
+// $tertiaryFontFamily: "museo-sans-condensed", "Futura", "Trebuchet MS", sans-serif;
+	//museo-sans-condensed options 500
+// "league-gothic"
+// $primaryFontFamily: "museo-sans", "Verdana", "Gill Sans", "Lucida Grande", "Helvetica", sans-serif;
+// $primaryFontFamily: "ff-tisa-web-pro", "FF-Tisa" "Palatino", "Hoefler Text", "Baskerville", "Georgia", serif;
+$primaryFontFamily: "proxima-nova", "proxima nova", "FF-Tisa", "Palatino", "Hoefler Text", "Baskerville", "Georgia", serif;
+// $primaryFontFamily: "proxima-nova", "FF-Tisa" "Palatino", "Hoefler Text", "Baskerville", "Georgia", serif;
+    //museo-sans options 300 and 700
+// $secondaryFontFamily: "league-gothic", "Futura", "Trebuchet MS", sans-serif;
+// $secondaryFontFamily: "raleway", "Futura", "Trebuchet MS", sans-serif;
+// $secondaryFontFamily: "brandon-grotesque", "Futura", "Trebuchet MS", sans-serif;
+$secondaryFontFamily: "futura-pt", "Futura", "Trebuchet MS", "Verdana", sans-serif;
+// $secondaryFontFamily: "aktiv-grotesk-std", "Futura", "Trebuchet MS", sans-serif;
+// $secondaryFontFamily: "Oswald", "Futura", "Trebuchet MS", sans-serif;
+	//Oswald options 300, 400, 700 Bold
+// $tertiaryFontFamily: "museo", "Palatino", "Hoefler Text", "Baskerville", "Georgia", serif;
+	//museo, options: 300 and 700
+// ---------- Font Families ----------
+
+%primaryFontFamily { font-family: $primaryFontFamily; }
+%secondaryFontFamily { font-family: $secondaryFontFamily; }
+// %tertiaryFontFamily { font-family: $tertiaryFontFamily; }
+
+// ---------- Font Weight ----------
+
+%fontWeightLight { font-weight: 300; }
+//google-font is 400, typekit is 500
+%fontWeightRegular { font-weight: 400; }
+// %font-weight-
+%fontWeightMedium { font-weight: 500; }
+%fontWeightBold { font-weight: 700; }
+
+    //------------------------------------------
+    // %primaryFontLight {
+    //     @extend %primaryFontFamily;
+    //     @extend %fontWeightLight;
+    // }
+    %primaryFontRegular {
+        @extend %primaryFontFamily;
+        @extend %fontWeightRegular;
+    }
+    // %primaryFontMedium {
+    //     @extend %primaryFontFamily;
+    //     // @extend %fontWeightBold;
+    //     @extend %fontWeightMedium;
+    // }
+    %primaryFontBold{
+        @extend %primaryFontFamily;
+        @extend %fontWeightBold;
+    }
+    //------------------------------------------
+    // %secondaryFontLight {
+    //     @extend %secondaryFontFamily;
+    //     @extend %fontWeightLight;
+    // }
+    %secondaryFontRegular {
+        @extend %secondaryFontFamily;
+        @extend %fontWeightRegular;
+    }
+    // %secondaryFontMedium {
+    //     @extend %secondaryFontFamily;
+    //     // @extend %fontWeightRegular;
+    //     @extend %fontWeightMedium;
+    // }
+    %secondaryFontBold {
+        @extend %secondaryFontFamily;
+        @extend %fontWeightBold;
+    }
+    //------------------------------------------
+    // %tertiaryFontLight {
+    //     @extend %tertiaryFontFamily; 
+    //     @extend %fontWeightLight;
+    // }
+    // %tertiaryFontMedium{
+    //     @extend %tertiaryFontFamily; 
+    //     // @extend %fontWeightBold;
+    //     @extend %fontWeightMedium;
+    // }
+    //------------------------------------------

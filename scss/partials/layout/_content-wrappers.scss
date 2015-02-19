@@ -1,0 +1,17 @@
+#content_wrapper > section {
+	margin: 0;
+	padding: $h2FontSize ($h2FontSize /2);
+	background: $color1;
+	&:nth-child(2n+1) {
+		@extend %lightTextOnDarkBg;
+		background: $color3;
+		background: linear-gradient(to bottom left, $color4, $color3);
+		color: $color1;
+		a {
+			@extend %lightLinkFontColor;
+		}
+	}
+}
+
+
+

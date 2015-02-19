@@ -1,0 +1,122 @@
+%buttonBase {
+    position: relative;
+    width: 100%;
+    padding: $fontSize18 0;
+    // background:pink;
+    margin: 0 auto;
+    a {
+        display: inline-block;
+    }
+}
+%buttonCentered {
+    @extend %buttonBase;
+
+    text-align: center;
+
+}
+
+%buttonLightTextOnDarkBg {
+    a {
+        @extend %lightTextOnDarkBg;
+        @extend %lightLinkFontColor;
+        border: 2px solid;
+        background: $color2;        // border-radius: $fontSize2;
+        // &:hover, &:active {
+        //     // color: $color1;
+        //     // border-color: $color1;
+        // }
+        // &:active {
+        //     background: transparentize($color1, 0.7);
+        // }
+    }
+}
+%buttonDarkTextOnLightBg {
+    a {
+        color: $color4;
+        // border-color: $color4;
+        border: 2px solid $color4;
+        &:hover, &:active {
+            color: $accentColor1;
+            border-color: $accentColor1;
+        }
+        &:active {
+            background: transparentize($color5, 0.7);
+        }
+    }
+}
+
+//-----------------------------------------------------------
+//  applied button styles
+//-----------------------------------------------------------
+
+#banner .button {
+    // @extend %buttonPaddingAround;
+    @extend %buttonCentered;
+    @extend %buttonLightTextOnDarkBg;
+    // padding: $fontSize18 0;
+    a { background: transparentize($color3, 0.7); }
+}
+.button {
+    @extend %buttonCentered;
+    @extend %buttonDarkTextOnLightBg;
+    // padding: $fontSize18 0;
+}
+.contact_button {
+    @extend %buttonLightTextOnDarkBg;
+    @extend %buttonBase;
+    // padding: $fontSize18 0;
+}
+    // background: pink;
+    // @extend %buttonCentered;
+    // display: inline-block;
+    // vertical-align: middle;
+    // background: pink;
+    // font-size: $fontSize18;
+    // margin-right: $fontSize4;
+    // a {
+    //     // display: block;
+    //     // // background: skyblue;
+    //     // padding: 0 1em;
+    //     // line-height: $iconSize ;
+    //     // height: $iconSize;
+    // }   
+    // /*EMAIL ICON*/
+    // a[href^="mailto:"]{
+    //     padding-left: $iconSize + $fontSize9;
+    //     position: relative;
+    //     &:before {
+    //         content: " ";
+    //         position: absolute;
+    //         left: 0;
+    //         display: block;
+    //         height: $iconSize;
+    //         width: $iconSize;
+    //         vertical-align: middle;
+    //         background: url(../images/icons/email_icon_neg.svg) no-repeat center;
+    //         background-size: contain;  
+    //     }
+    // }   
+// }
+.icon_button {
+    display: inline-block;
+    padding: 0;
+    margin: 0 $fontSize8 ;
+    a {
+        vertical-align: middle;
+        display: inline-block;
+        height: $iconSize;
+        width: $iconSize;
+    }
+    a[href^="https://github"]{
+        background: url(../images/icons/Github-Mark-Light-64px.png) no-repeat center; 
+        background-size: contain;
+    } 
+    a[href^="https://facebook"] { 
+        background: url(../images/icons/FB-f-Logo__white_72.png) no-repeat center; 
+        background-size: contain;
+    }
+    a[href^="https://twitter"] { 
+        background: url(../images/icons/Twitter_logo_white.png) no-repeat center;
+        background-size: contain; 
+    }
+}

@@ -1,0 +1,10 @@
+#content_wrapper > section {
+	background: $color1;
+	margin: 0;
+	// padding: $fontSize4 $fontSize16 $fontSize44 $fontSize16;
+	padding: $fontSize4 0 $h2FontSize 0;
+	color: $color2;
+	// &:nth-child(2n+1) {
+	// 	background: $transparentAccentColor1;
+ 	// }
+}

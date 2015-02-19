@@ -1,0 +1,21 @@
+.banner {
+	@extend %lightTextOnDarkBg;
+    @extend %primaryFontRegular;
+	color: $color1;
+	position: relative;
+	display: table; // so that #intro can be vertically and horizontally centered
+	margin: 0; //pushes it down, from the header psuedo line break
+	width: 100%;
+	min-height: (($h1FontSize * 1.45) + ($h4FontSize * 1.45)) * 4 ;
+	// background: url(../images/2000pebblesbkg.jpg) fixed no-repeat;
+	// background: url(../images/outoffocusbkg.jpg) fixed no-repeat;
+	background: $color2;
+	// background-size: cover;
+	// background-position: center;
+	.intro {
+		display: table-cell; // allows for centering
+		vertical-align: middle; // vertically centered
+		width: 100%;
+		background: transparentize($color3, 0.5); // adds some contrast to the white text
+	}
+}

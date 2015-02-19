@@ -1,0 +1,199 @@
+//line height should be between 120%-145% or 1.2-1.45 unitless#
+//to get line-height, browser will multiply font-size by the % or unitless #
+$lineHeight: 1.5;
+    //APPLIED FONT SIZES
+        $captionFontSize: $fontSize16;
+        $pFontSize: $fontSize18;
+            $pMaxWidth: $pFontSize * 30;
+        // $linkFontSize: $fontSize18;
+        // $navFontSize: $fontSize24;
+        $navFontSize: $fontSize22;
+        // $buttonFontSize: $
+            // $portfolioNavFontSize: $navFontSize;
+        // $navFontSize: $fontSize24;
+        // $h1FontSize: $fontSize72;
+        // $h2FontSize: $fontSize48;
+        // $h1FontSize: $fontSize48;
+        // $h2FontSize: $fontSize32;
+        //     $h2FullHeight: ( $h2FontSize * $lineHeight ) + (( $h2FontSize * 0.5) * 2); //h2 + h2TopAndBottomPadding
+        // $h3FontSize: $fontSize28;
+        // $h4FontSize: $fontSize16;
+
+        // $h1FontSize: $fontSize32;
+        // $h2FontSize: $fontSize24;
+        // $h3FontSize: $fontSize18;
+        // $h4FontSize: $fontSize16;
+        // $h5FontSize: $fontSize14;
+        // $h6FontSize: $fontSize12;
+
+        $h1FontSize: $fontSize48;
+        $h2FontSize: $fontSize32;
+        $h3FontSize: $fontSize26;
+        $h4FontSize: $fontSize22;
+        $h5FontSize: $fontSize18;
+        $h6FontSize: $fontSize16;
+
+        // $h1FontSize: $fontSize48;
+        // $h2FontSize: $fontSize36;
+        // $h3FontSize: $fontSize24;
+        // $h4FontSize: $fontSize22;
+        // $h5FontSize: $fontSize18;
+        // $h6FontSize: $fontSize16;
+        // $h1FontSize: $fontSize60;
+        // $h2FontSize: $fontSize48;
+        // $h3FontSize: $fontSize30;
+        // $h4FontSize: $fontSize24;
+        // $h5FontSize: $fontSize22;
+        // $h6FontSize: $fontSize18;
+
+        // h1      { font-size: 2em;       /* 2*16 = 32 */         }
+        // h2      { font-size: 1.5em;     /* 1.5*16 = 24 */       }
+        // h3      { font-size: 1.17em;    /* 1.17*16 = 18.72 */   }
+        // h4      { font-size: 1em;       /* 1*16 = 16 */         }
+        // h5      { font-size: 0.83em;    /* 0.83*16 = 13.28 */   }
+        // h6      { font-size: 0.75em;    /* 0.75*16 = 12 */      }
+
+
+
+//==========================================================================
+//HEIGHT AND WIDTH SIZES
+//========================================================================== 
+// $headerFooterLineBreakSize: $fontSize2;//$fontSize4;
+
+$navSize : $navFontSize * 2;
+// $navSize : $navFontSize * 2;
+$footerSize: $navSize * 2.5;
+// $headerSize: $navSize * 2;
+	$xsmallHeaderSize: $navSize * 1.75;
+    $mediumHeaderSize: $navSize * 2;
+
+    
+
+// $xsmallNavLineHeight: $xsmallHeaderSize * 0.8;
+// $xsmallNavLineHeight: $xsmallHeaderSize * 0.75;
+$xsmallNavLineHeight: $xsmallHeaderSize * 0.75;
+// $smallNavLineHeight: $smallHeaderSize / 4;
+$mediumNavLineHeight: $mediumHeaderSize;
+
+// $naviconSize: $xsmallHeaderSize * 0.6;
+//     $naviconPadding: ( $xsmallHeaderSize - $naviconSize ) / 2;
+
+// $naviconSize: $xsmallNavLineHeight;
+// $naviconPadding: ( $xsmallHeaderSize - $naviconSize ) / 2;
+// $naviconSize: $navFontSize * 1.45;
+// 	$naviconPadding: ( $xsmallHeaderSize - $naviconSize ) / 2;
+$naviconSize: $navFontSize;
+    $naviconPadding: ( $xsmallHeaderSize - $naviconSize ) / 2;
+
+// $porfolioNavImageWidth: $fontSize1 * 230;
+
+// $xsmallHeaderExpandedSize: $xsmallHeaderSize + $fontSize4 + ( $xsmallNavLineHeight * 4 ) + ($xsmallNavLineHeight * 0.75) + ($fontSize1 * 10);
+// $mediumPorfolioNavImageSize: 230px;
+
+// $portfolioNavTabHeight: ($portfolioNavFontSize * 3) ;
+// $displacePortNavTabHeight: $portfolioNavTabHeight + ($fontSize2 * 2);
+// $displacePortNavTabHeight: $portfolioNavTabHeight + $navFontSize;
+// $smallPortfolioNavTabHeight: $portfolioNavFontSize * 2;
+// $mediumporfolioNavImageHeight: $porfolioNavImageWidth;
+
+// $buttonSize: $fontSize40; //optimal size for touchscreens
+
+//==========================================================================
+//   BREAKPOINTS and TWEAKPOINTS
+//========================================================================== 
+//target / context
+// $bp-xsmall-min: $fontSize1 * 320 ;       //*320px*/
+// $bp-xsmall-max: $fontSize1 * 480 ;       //*480px*/
+
+// $bp-small-min: $fontSize1 * 481;     //*481px*/
+// $bp-small-max: $fontSize1 * 640 ;         //*640px*/
+$bp-xsmall-min: $fontSize1 * 320 ;       //*320px*/
+$bp-xsmall-max: $fontSize1 * 480 ;       //*480px*/
+
+$bp-small-min: $fontSize1 * 481;     //*481px*/
+$bp-small-max: $fontSize1 * 520 ;         //*520px*/
+
+$bp-medium-min: $fontSize1 * 521 ;    //*521px*/
+$bp-medium-max: $fontSize1 * 800 ;   //*800px*/
+
+// $bp-large-min: $fontSize1 * 801;       //*801px*/
+// $bp-large-max: $fontSize1 * 1100 ;        //*1100px*/
+
+// $bp-xlarge-min: $fontSize1 * 1101 ;   //*1101px*/
+// $bp-xlarge-max: $fontSize1 * 1441 ;   //*1441px*/
+$bp-large-min: $fontSize1 * 801;       //*801px*/
+$bp-large-max: $fontSize1 * 1200 ;        //*1100px*/
+
+$bp-xlarge-min: $fontSize1 * 1201 ;   //*1101px*/
+$bp-xlarge-max: $fontSize1 * 1441 ;   //*1441px*/
+//========================================================================== 
+//  COLUMN SIZES/ Grid
+//========================================================================== 
+
+$colMargin: 2%;
+$colMarginPair: $colMargin * 2;
+
+// 12 columns
+// 24 margins (2 per column)
+// (100 - 12($colMargin * 2)) / 12 = $col1
+
+$col1: (100 - ($colMarginPair * 12)) / 12 ;
+$col2: ($col1 * 2) + $colMarginPair; 
+$col3: ($col1 * 3) + ($colMarginPair * 2); 
+$col4: ($col1 * 4) + ($colMarginPair * 3); 
+$col5: ($col1 * 5) + ($colMarginPair * 4); 
+$col6: ($col1 * 6) + ($colMarginPair * 5); 
+$col7: ($col1 * 7) + ($colMarginPair * 6); 
+$col8: ($col1 * 8) + ($colMarginPair * 7); 
+$col9: ($col1 * 9) + ($colMarginPair * 8); 
+$col10: ($col1 * 10) + ($colMarginPair * 9); 
+$col11: ($col1 * 11) + ($colMarginPair * 10); 
+$col12: ($col1 * 12) + ($colMarginPair * 11); 
+
+
+
+// <ul id="test">
+//     <li>1</li><!--
+//     --><li>2</li><!--
+//     --><li>3</li><!--
+//     --><li>4</li><!--
+//     --><li>5</li><!--
+//     --><li>6</li><!--
+//     --><li>7</li><!--
+//     --><li>8</li><!--
+//     --><li>9</li><!--
+//     --><li>10</li><!--
+//     --><li>11</li><!--
+//     --><li>12</li><!--
+//     --><li>13</li>
+// </ul>
+
+// #test {
+//     display: block;
+//     background: pink;
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//     li {
+//         background: skyblue;
+//         display: inline-block;
+//         margin: $colMargin;
+//         padding: 0;
+//     }
+//     li:nth-of-type(1) { width: $col12; }
+//     li:nth-of-type(2) { width: $col1; }
+//     li:nth-of-type(3) { width: $col11; }
+//     li:nth-of-type(4) { width: $col2; }
+//     li:nth-of-type(5) { width: $col10; }
+//     li:nth-of-type(6) { width: $col3; }
+//     li:nth-of-type(7) { width: $col9; }
+//     li:nth-of-type(8) { width: $col4; }
+//     li:nth-of-type(9) { width: $col8; }
+//     li:nth-of-type(10) { width: $col5; }
+//     li:nth-of-type(11) { width: $col7; }
+//     li:nth-of-type(12) { width: $col6; }
+//     li:nth-of-type(13) { width: $col6; }
+// }
+
+$iconSize: $fontSize40; //finger tip size
+// $iconSize: $fontSize48; //finger tip size
