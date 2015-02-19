@@ -413,8 +413,7 @@ footer {
         background: #282828;
         transition: background 1s ease; }
   .work_it img {
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
 
 .work_cap {
   padding: 0.6875rem 0;
@@ -460,6 +459,11 @@ footer {
 #contact h2 {
   width: 96%; }
 
+@media only screen and (max-width: 21.3125rem) {
+  .contact_button {
+    background: transparent;
+    width: 100%;
+    margin: 0 auto; } }
 @media only screen and (max-width: 32.5rem) {
   #aboutme,
   #aboutsite,
