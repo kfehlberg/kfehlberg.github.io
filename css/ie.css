@@ -181,13 +181,7 @@ footer a {
     height: 40px;
     width: 40px; }
   .icon_button a[href^="https://github"] {
-    background: url(../images/icons/Github-Mark-Light-64px.png) no-repeat center;
-    background-size: contain; }
-  .icon_button a[href^="https://facebook"] {
-    background: url(../images/icons/FB-f-Logo__white_72.png) no-repeat center;
-    background-size: contain; }
-  .icon_button a[href^="https://twitter"] {
-    background: url(../images/icons/Twitter_logo_white.png) no-repeat center;
+    background: url(../images/icons/GitHub-Mark-Light-64px.png) no-repeat center;
     background-size: contain; }
 
 .banner {
