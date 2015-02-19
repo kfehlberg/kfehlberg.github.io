@@ -22,6 +22,11 @@
 #contact h2 {
     width: $col12;
 }
+// @include mq-xxsmall-max max-width 341px, xxsmall screens{
+//     .contact_button {
+//         // padding: 0;
+//     }
+// }
 @include mq-small-max {
 	#aboutme, 
     #aboutsite, 

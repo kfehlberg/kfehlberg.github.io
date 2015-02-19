@@ -147,7 +147,7 @@ footer a {
 #banner .button, .button, .contact_button {
   position: relative;
   width: 100%;
-  padding: 18px 0;
+  padding: 10px 0;
   margin: 0 auto; }
   #banner .button a, .button a, .contact_button a {
     display: inline-block; }
@@ -205,6 +205,8 @@ footer a {
     background: rgba(80, 80, 80, 0.5); }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 #content_wrapper .content, header .content, footer .content {
@@ -225,6 +227,9 @@ ol, ul {
 html, body {
   height: 100%;
   width: 100%; }
+
+img {
+  display: block; }
 
 #body_wrapper {
   position: relative;
@@ -336,4 +341,4 @@ footer {
   width: 100%;
   color: #f2f2f2;
   -webkit-font-smoothing: antialiased;
-  width: 29.33333%; }
+  width: 29.3333333333%; }
