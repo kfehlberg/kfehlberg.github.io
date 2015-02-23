@@ -187,14 +187,18 @@ footer a {
   display: table;
   margin: 0;
   width: 100%;
-  min-height: 25.375rem;
   background: #282828; }
   .banner .intro {
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
-    background: rgba(80, 80, 80, 0.5); }
+    width: 100%; }
 
+@media only screen and (max-width: 32.5rem) {
+  .banner {
+    height: 15.859375rem; } }
+@media only screen and (min-width: 32.5625rem) {
+  .banner {
+    height: 25.375rem; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

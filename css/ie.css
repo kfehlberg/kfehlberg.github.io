@@ -195,8 +195,7 @@ footer a {
   .banner .intro {
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
-    background: rgba(80, 80, 80, 0.5); }
+    width: 100%; }
 
 * {
   -webkit-box-sizing: border-box;

@@ -1,0 +1,16 @@
+.banner {
+	@extend %lightTextOnDarkBg;
+    @extend %primaryFontRegular;
+	color: $color1;
+	position: relative;
+	display: table; // so that #intro can be vertically and horizontally centered
+	margin: 0; //pushes it down, from the header psuedo line break
+	width: 100%;
+	min-height: (($h1FontSize * 1.45) + ($h4FontSize * 1.45)) * 4 ;
+	background: $color2;
+	.intro {
+		display: table-cell; // allows for centering
+		vertical-align: middle; // vertically centered
+		width: 100%;
+	}
+}
