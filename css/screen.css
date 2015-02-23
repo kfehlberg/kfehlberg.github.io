@@ -177,7 +177,7 @@ footer li a { padding: 0 1.25rem; }
 
 @media only screen and (max-width: 21.3125rem) { .contact_button { background: transparent; width: 100%; margin: 0 auto; } }
 @media only screen and (max-width: 32.5rem) { #aboutme, #aboutsite, #contact p, .contact_button { width: 96%; } }
-@media only screen and (min-width: 32.5625rem) and (max-width: 75.0625rem) { #about .content, #contact .content { max-width: 45rem; margin: 0 auto; } }
+@media only screen and (min-width: 32.5625rem) and (max-width: 75.0625rem) { #about .content, #contact .content { max-width: 50.625rem; margin: 0 auto; } }
 @media only screen and (max-width: 75rem) { #contact .content { text-align: center; } }
 @media only screen and (min-width: 75.0625rem) { #contact p, #aboutme { width: 54.3333333333%; }
   .contact_button, #aboutsite { width: 37.6666666667%; }

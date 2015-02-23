@@ -6,8 +6,6 @@ body, p, h1, .banner, footer a, .button a, .button button, #nav a, h2, h3, h4, h
 
 a, .contact_button a, p a { font-weight: 700; }
 
-header { margin: 0 auto; }
-
 ol, ul, html, body { margin: 0px; padding: 0px; }
 
 html { font-family: sans-serif; font-size: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -118,7 +116,7 @@ img { display: block; }
 
 #nav > a, #navicon_hide { display: none !important; }
 
-header { position: relative; width: 100%; background: #f2f2f2; }
+header { position: relative; width: 100%; margin: 0 auto; background: #f2f2f2; }
 
 #logo_container, #nav { position: relative; display: inline-block; height: 139.2px; line-height: 139.2px; }
 
@@ -141,11 +139,11 @@ footer li a { padding: 0 20px; }
 #kfphoto { max-width: 400px; padding: 0 26px 26px 26px; margin: 0 auto; }
 #kfphoto img { display: block; border-radius: 100%; }
 
-#about .content, #contact .content { max-width: 720px; margin: 0 auto; }
+#about .content, #contact .content, #works .content { max-width: 810px; margin: 0 auto; }
 
 #aboutme, #aboutsite, #contact h2, #contact p, .contact_button { margin: 2%; padding: 0; display: inline-block; vertical-align: top; }
 
-#contact h2 { width: 96%; }
+#contact { text-align: center; }
 
 #work_list { display: block; width: 100%; margin: 0; padding: 0; }
 
@@ -162,8 +160,8 @@ footer li a { padding: 0 20px; }
 #showcase h4 { margin: 0.5em 0 0.25em; }
 #showcase li { margin-bottom: 1em; }
 #showcase li ul { list-style: disc; font-size: 16px; margin: 1em 0 1em 1em; }
-#showcase .button { margin: 2%; }
+#showcase .button { margin: 2% auto; }
 
-.showcase_container { display: block; position: relative; max-width: 720px; margin: 0 auto; top: 0; }
+.showcase_container { display: block; position: relative; max-width: 810px; margin: 0 auto; top: 0; }
 
 .showcase_main_img, .showcase_info, .showcase_sub_img { display: inline-block; vertical-align: top; margin: 2%; }
