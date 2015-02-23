@@ -37,7 +37,7 @@
 
 // ---------- Layout ----------
 
-	@import 'partials/layout/_layout.scss' ;
+	@import 'partials/layout/_layoutIE8.scss' ; //added 2-23-15
 	// @import 'partials/layout/_content-wrappersIE8.scss' ; 
 	@import 'partials/layout/_content-wrappers.scss' ; 
 	@import 'partials/layout/_headerIE8.scss' ;
@@ -53,8 +53,8 @@
 // ---------- Pages----------
 
 	// @import 'partials/pages/_portfolio-workIE8.scss';
-	@import 'partials/pages/_about-contact-workIE8.scss';
-	@import 'partials/pages/_showcaseIE8.scss';
+	@import 'partials/pages/_about-contact-workIE8.scss'; //added 2-23-15
+	@import 'partials/pages/_showcaseIE8.scss'; //added 2-22-15
 
 // ---------- States ----------
 

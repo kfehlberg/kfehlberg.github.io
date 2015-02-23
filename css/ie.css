@@ -91,8 +91,6 @@ footer a { font-size: 22px; }
 .banner { color: #f2f2f2; position: relative; display: table; margin: 0; width: 100%; min-height: 406px; background: #282828; }
 .banner .intro { display: table-cell; vertical-align: middle; width: 100%; }
 
-* { box-sizing: border-box; }
-
 #content_wrapper .content, header .content, footer .content { max-width: 1200px; margin: 0 auto; position: relative; }
 
 #body_wrapper { display: block; width: 100%; }
