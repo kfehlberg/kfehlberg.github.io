@@ -1,152 +1,119 @@
 //==========================================================================
-// //   BREAKPOINTS and TWEAKPOINTS
-// //========================================================================== 
-
-// $bp-xsmall-min: $fontSize1 * 320 ;       //*320px*/
-// $bp-xsmall-max: $fontSize1 * 480 ;       //*480px*/
-
-// $bp-small-min: $fontSize1 * 481 ;     //*481px*/
-// $bp-small-max: $fontSize1 * 640 ;         //*640px*/
-
-
-// $bp-medium-min: $fontSize1 * 641 ;    //*641px*/
-// $bp-medium-max: $fontSize1 * 999 ;   //*999px*/
-
-// $bp-large-min: $fontSize1 * 1000 ;       //*1000px*/
-// // $bp-large-max: 75em;        //*1200px*/
-// $bp-large-max: $fontSize1 * 1440 ;        //*1440px*/
-
-// // $bp-xlarge-min: 75.0625em;   //*1201px*/
-// $bp-xlarge-min: $fontSize1 * 1441 ;   //*1441px*/
-
-// $bp-xsmall-min: 20em;       //*320px*/
-// $bp-xsmall-max: 30em;       //*480px*/
-
-// $bp-small-min: 30.063em;    //*481px*/
-// $bp-small-max: 40em;        //*640px*/
-
-// $bp-medium-min: 40.063em;   //*641px*/
-// $bp-medium-max: 62.4375em;  //*999px*/
-
-// $bp-large-min: 62.5em;      //*1000px*/
-// $bp-large-max: 90em;        //*1440px*/
-
-// $bp-xlarge-min: 90.063em;   //*1441px*/
-
-//$tweak-medium:
-//$tweak-small: 31.25em; //*500px*/
-//==========================================================================
 //MEDIA QUERIES
 //========================================================================== 
-@mixin mq-xxsmall-max /* max-width 341px, xxsmall screens */{
+@mixin mq-xxsmall-max {
     @media only screen and (max-width: $bp-xsmall-min) { 
         @content;
     } 
 }
-///*-------------------------------------
+//-------------------------------------
 //    XSMALL SCREENS
-//-------------------------------------*/
-@mixin mq-xsmall-min /* min-width 320px, xsmall screens */{
+//-------------------------------------
+@mixin mq-xsmall-min {
     @media only screen and (min-width: $bp-xsmall-min) { 
         @content;
     } 
 }
-@mixin mq-xsmall-min2max /*min-width: 320px and max-width 480px */ {
+@mixin mq-xsmall-min2max {
     @media only screen and (min-width: $bp-xsmall-min) and (max-width: $bp-xsmall-max) { 
          @content;
     }    
 }
-@mixin mq-xsmall-max /* max-width 480px, mobile-only styles*/{
+@mixin mq-xsmall-max {
     @media only screen and (max-width: $bp-xsmall-max) { 
         @content;
     } 
 }
-///*-------------------------------------
+//-------------------------------------
 //    SMALL SCREENS
-//-------------------------------------*/
-@mixin mq-small-min /* min-width 481px, small screens */{
+//-------------------------------------
+@mixin mq-small-min {
     @media only screen and (min-width: $bp-small-min) { 
         @content;
     } 
 }
-@mixin mq-small-min2max /*min-width: 481px and max-width 640px */ {
+@mixin mq-small-min2max  {
     @media only screen and (min-width: $bp-small-min) and (max-width: $bp-small-max) { 
          @content;
     }    
 }
-@mixin mq-small-max /* max-width 640px */{
+@mixin mq-small-max {
     @media only screen and (max-width: $bp-small-max) { 
         @content;
     } 
 }
-///*-------------------------------------
+//-------------------------------------
 @mixin mq-small-min2medium-max {
     @media only screen and (min-width: $bp-small-min) and (max-width: $bp-medium-max) {
         @content;
     }
 }
-///*-------------------------------------
+//-------------------------------------
 //    MEDIUM SCREENS
-//-------------------------------------*/
-// Medium screens
-@mixin mq-medium-min /* min-width 641px, medium screens */{
+//-------------------------------------
+
+@mixin mq-medium-min {
     @media only screen and (min-width: $bp-medium-min) { 
         @content;
     } 
 }
-@mixin mq-medium-min2max /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */ {
+@mixin mq-medium-min2max {
     @media only screen and (min-width: $bp-medium-min) and (max-width: $bp-medium-max) { 
          @content;
     } 
 } 
-@mixin mq-medium-max /* max-width 640px */{
+@mixin mq-medium-max {
     @media only screen and (max-width: $bp-medium-max) { 
         @content;
     } 
 }
 
-///*-------------------------------------
+@mixin mq-medium-min2xlarge-min {
+    @media only screen and (min-width: $bp-medium-min) and (max-width: $bp-xlarge-min) { 
+        @content;
+    } 
+}
+//-------------------------------------
 //    LARGE SCREENS
-//-------------------------------------*/
-// Large screens
-@mixin mq-large-min /* min-width 1025px, large screens */ {
+//-------------------------------------
+@mixin mq-large-min {
     @media only screen and (min-width:$bp-large-min) { 
         @content;
     } 
 }
-@mixin mq-large-min2max/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */{
-    @media only screen and (min-width: $bp-large-min) and (max-width: $bp-large-max) { 
+@mixin mq-large-min2max {
+    @media only screen and (min-width: $bp-large-min) and (max-width: $bp-large-max) {
+        @content;
+    } 
+}
+@mixin mq-large-max {
+    @media only screen and (max-width:$bp-large-max) { 
         @content;
     } 
 }
 
-///*-------------------------------------
+//-------------------------------------
 @mixin mq-small-min2large-max {
     @media only screen and (min-width: $bp-small-min) and (max-width: $bp-large-max) {
         @content;
     }
 }
-///*-------------------------------------
+@mixin mq-large-min2xlarge-min{
+    @media only screen and (min-width: $bp-large-min) and (max-width: $bp-xlarge-min) { 
+        @content;
+    } 
+}
+@mixin mq-large-min2xlarge-max {
+    @media only screen and (min-width: $bp-large-min) and (max-width: $bp-xlarge-max) { 
+        @content;
+    } 
+}
+//-------------------------------------
 //    XLARGE SCREENS
-//-------------------------------------*/
-// XLarge screens
-@mixin mq-xlarge-min/* min-width 1441px, xlarge screens */{
+//-------------------------------------
+
+@mixin mq-xlarge-min {
     @media only screen and (min-width: $bp-xlarge-min) { 
         @content;
     } 
 }
-
-
-
-
-
-//
-//@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-//
-//// XXLarge screens
-//@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
-
-
-
-
-//
