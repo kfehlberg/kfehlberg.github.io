@@ -97,6 +97,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/500sg_phasicaButtonStates.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34356,
+		"inputAbbreviatedPath": "\/images\/500sg_phasicaButtonStates.png",
+		"outputAbbreviatedPath": "\/images\/500sg_phasicaButtonStates.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/icons\/FB-f-Logo__white_72.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -492,6 +503,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/scss\/partials\/pages\/_about-contact-workIE8.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/partials\/pages\/_about-contact-workIE8.scss",
+		"outputAbbreviatedPath": "\/scss\/partials\/css\/_about-contact-workIE8.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/scss\/partials\/pages\/_about_and_contact.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -501,22 +528,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/partials\/pages\/_about_and_contact.scss",
 		"outputAbbreviatedPath": "\/scss\/partials\/css\/_about_and_contact.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/scss\/partials\/pages\/_about_and_contactIE8.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scss\/partials\/pages\/_about_and_contactIE8.scss",
-		"outputAbbreviatedPath": "\/scss\/partials\/css\/_about_and_contactIE8.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

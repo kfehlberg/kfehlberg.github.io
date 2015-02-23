@@ -44,7 +44,7 @@
 @include mq-medium-min2xlarge-min  {
 	#about .content,
 	#contact .content {
-		max-width: $pFontSize * 40;
+		max-width: $pMaxWidth;
 		margin: 0 auto;
 	}
 }

@@ -22,7 +22,7 @@ svg:not(:root) { overflow: hidden; }
 
 footer a, .button a, .button button, #nav a, h2, h4, h5, h6 { letter-spacing: 0.025em; text-transform: uppercase; }
 
-footer a, #banner .button a, .contact_button a, #content_wrapper > section:nth-child(2n+1) a, .banner, #content_wrapper > section:nth-child(2n+1) { -webkit-font-smoothing: antialiased; }
+footer a, #banner .button a, .contact_button a, #content_wrapper > section:nth-child(2n+1) a, .banner, #content_wrapper > section:nth-child(2n+1), .work_cap { -webkit-font-smoothing: antialiased; }
 
 footer a, #banner .button a, .contact_button a, #content_wrapper > section:nth-child(2n+1) a { color: #f2f2f2; }
 footer a:hover, #banner .button a:hover, .contact_button a:hover, #content_wrapper > section:nth-child(2n+1) a:hover, footer a:focus, #banner .button a:focus, .contact_button a:focus, #content_wrapper > section:nth-child(2n+1) a:focus { color: #7FB8B0; border-color: #7FB8B0; }
@@ -136,16 +136,6 @@ footer li { display: inline-block; }
 footer li:nth-of-type(2) { position: absolute; top: 0; right: 0; padding: 0 20px; }
 footer li a { padding: 0 20px; }
 
-#work_list { display: block; width: 100%; margin: 0; padding: 0; }
-
-.work_it { display: inline-block; position: relative; margin: 2%; }
-.work_it a { display: block; height: 100%; width: 100%; background: transparent; }
-.work_it a:hover, .work_it a:focus, .work_it a:active { background: #c8c8c8; }
-.work_it a:hover .work_cap, .work_it a:focus .work_cap, .work_it a:active .work_cap { background: #282828; }
-.work_it img { width: 100%; height: 100%; }
-
-.work_cap { padding: 11px 0; width: 100%; color: #f2f2f2; -webkit-font-smoothing: antialiased; width: 29.3333333333%; }
-
 #kfphoto { max-width: 400px; padding: 0 26px 26px 26px; margin: 0 auto; }
 #kfphoto img { display: block; border-radius: 100%; }
 
@@ -154,6 +144,16 @@ footer li a { padding: 0 20px; }
 #aboutme, #aboutsite, #contact h2, #contact p, .contact_button { margin: 2%; padding: 0; display: inline-block; vertical-align: top; }
 
 #contact h2 { width: 96%; }
+
+#work_list { display: block; width: 100%; margin: 0; padding: 0; }
+
+.work_it { display: inline-block; position: relative; max-width: 352px; margin: 2%; }
+.work_it a { display: block; height: 100%; width: 100%; background: transparent; }
+.work_it a:hover, .work_it a:focus, .work_it a:active { background: #c8c8c8; }
+.work_it a:hover .work_cap, .work_it a:focus .work_cap, .work_it a:active .work_cap { background: #282828; }
+.work_it img { width: 100%; height: 100%; }
+
+.work_cap { padding: 11px 0; width: 100%; color: #f2f2f2; }
 
 #showcase h2, #showcase h3, #showcase h4 { text-align: left; }
 #showcase h2, #showcase h3 { margin: 0 2%; }

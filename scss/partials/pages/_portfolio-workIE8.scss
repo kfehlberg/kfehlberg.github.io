@@ -8,6 +8,7 @@
 .work_it { // (#works .content ul li)
 	display: inline-block;
 	position: relative;
+	max-width: 352px; //$col4 of $bp-large-max 
 	margin: $colMargin;
 	a {
 		display: block;
@@ -32,6 +33,6 @@
 	width: 100%;
 	color: $color1;
 	-webkit-font-smoothing: antialiased; 
-	width: $col4; // no meq available in ie8- this is alternative
+	// width: $col4; // no meq available in ie8- this is alternative
 }
 
