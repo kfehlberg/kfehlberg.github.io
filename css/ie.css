@@ -144,16 +144,15 @@ img { display: block; max-width: 100%; }
 
 #aboutme, #aboutsite, #contact h2, #contact p, .contact_button, .work_it { margin: 2%; padding: 0; display: inline-block; vertical-align: top; }
 
-#contact { text-align: center; }
+#contact, #work_list { text-align: center; }
 
 #work_list { display: block; width: 100%; margin: 0; padding: 0; }
 
-.work_it { max-width: 500px; width: 46%; }
+.work_it { max-width: 357px; }
 .work_it a { display: block; height: 100%; width: 100%; background: transparent; }
 .work_it a:hover, .work_it a:focus, .work_it a:active { background: #c8c8c8; }
-.work_it a:hover .work_cap, .work_it a:focus .work_cap, .work_it a:active .work_cap { background: #282828; }
 
-.work_cap { padding: 11px 0; width: 100%; color: #f2f2f2; }
+.work_cap { padding: 11px 0; width: 100%; color: #f2f2f2; background: #282828; }
 
 #showcase h2, #showcase h3, #showcase h4 { text-align: left; }
 #showcase h2, #showcase h3 { margin: 0 2%; }
