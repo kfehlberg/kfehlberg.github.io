@@ -38,7 +38,8 @@
 // ---------- Layout ----------
 
 	@import 'partials/layout/_layout.scss' ;
-	@import 'partials/layout/_content-wrappersIE8.scss' ; 
+	// @import 'partials/layout/_content-wrappersIE8.scss' ; 
+	@import 'partials/layout/_content-wrappers.scss' ; 
 	@import 'partials/layout/_headerIE8.scss' ;
 	@import 'partials/layout/_footer.scss';
 
