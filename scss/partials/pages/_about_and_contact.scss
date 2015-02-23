@@ -22,15 +22,14 @@
 #contact h2 {
     width: $col12;
 }
-@include mq-xxsmall-max { //max-width 341px, xxsmall screens
+#about h3 {
+    text-align: left;
+}
+@include mq-xxsmall-max { 
     .contact_button {
         background: transparent;
         width: 100%;
         margin: 0 auto;
-        // position: absolute;
-        // left: 0;
-        // right: 0;
-        // padding: 0;
     }
 }
 @include mq-small-max {
@@ -41,22 +40,23 @@
 		width: $col12;
 	}
 }
-@include mq-medium-min2max {
-
+// @include mq-medium-min2max {
+@include mq-medium-min2xlarge-min  {
 	#about .content,
 	#contact .content {
-		max-width: $pFontSize * 30;
+		max-width: $pFontSize * 40;
 		margin: 0 auto;
 	}
-
 }
-@include mq-medium-max {
+// @include mq-medium-max {
+@include mq-large-max {
     #contact .content {
         text-align: center;
     }
 }
 //==========================================================================
-@include mq-large-min {
+// @include mq-large-min {
+@include mq-xlarge-min {
     #contact p, 
     #aboutme  { 
         width: $col7; 
