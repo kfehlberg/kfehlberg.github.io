@@ -142,7 +142,11 @@ img { display: block; max-width: 100%; }
 
 #about .content, #contact .content, #works .content { max-width: 810px; margin: 0 auto; }
 
-#aboutme, #aboutsite, #contact h2, #contact p, .contact_button, .work_it { margin: 2%; padding: 0; display: inline-block; vertical-align: top; }
+#aboutme, #aboutsite, #contact h2, #contact p, .contact_button, .work_it { padding: 0; display: inline-block; vertical-align: top; }
+
+#aboutme, #aboutsite, #contact h2, #contact p, .work_it { margin: 16.2px; }
+
+.contact_button { margin: 16.2px 0; }
 
 #contact { text-align: center; }
 

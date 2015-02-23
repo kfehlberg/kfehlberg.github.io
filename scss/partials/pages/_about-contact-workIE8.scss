@@ -22,11 +22,19 @@
 #contact p, 
 .contact_button,
 .work_it {
-    margin: $colMargin;
+    // margin: 16.2px; //$colMargin; //2% of $pMaxWidth 
     padding: 0;
     display: inline-block;
     vertical-align: top;
 }
+#aboutme, 
+#aboutsite, 
+#contact h2,
+#contact p, 
+.work_it {
+    margin: 16.2px; //$colMargin; //2% of $pMaxWidth 
+}
+.contact_button { margin: 16.2px 0; } //$colMargin; //2% of $pMaxWidth
 #contact { text-align: center; }
 // //==========================================================================
 #work_list { // (#works .content ul)
