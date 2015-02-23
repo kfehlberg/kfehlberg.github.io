@@ -22,19 +22,11 @@
 #contact p, 
 .contact_button,
 .work_it {
-    // margin: 16.2px; //$colMargin; //2% of $pMaxWidth 
+    margin: $colMargin; 
     padding: 0;
     display: inline-block;
     vertical-align: top;
 }
-#aboutme, 
-#aboutsite, 
-#contact h2,
-#contact p, 
-.work_it {
-    margin: 16.2px; //$colMargin; //2% of $pMaxWidth 
-}
-.contact_button { margin: 16.2px 0; } //$colMargin; //2% of $pMaxWidth
 #contact { text-align: center; }
 // //==========================================================================
 #work_list { // (#works .content ul)
@@ -44,10 +36,8 @@
     padding: 0;
 }
 .work_it { // (#works .content ul li)
-    // display: inline-block;
-    // position: relative;
-    max-width: 372px; //$col6 (46%) of $pMaxWidth (810px)
-    // margin: $colMargin;
+    max-width: 500px; 
+    width: $col6;
     a {
         display: block;
         height: 100%;

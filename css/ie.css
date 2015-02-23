@@ -142,17 +142,13 @@ img { display: block; max-width: 100%; }
 
 #about .content, #contact .content, #works .content { max-width: 810px; margin: 0 auto; }
 
-#aboutme, #aboutsite, #contact h2, #contact p, .contact_button, .work_it { padding: 0; display: inline-block; vertical-align: top; }
-
-#aboutme, #aboutsite, #contact h2, #contact p, .work_it { margin: 16.2px; }
-
-.contact_button { margin: 16.2px 0; }
+#aboutme, #aboutsite, #contact h2, #contact p, .contact_button, .work_it { margin: 2%; padding: 0; display: inline-block; vertical-align: top; }
 
 #contact { text-align: center; }
 
 #work_list { display: block; width: 100%; margin: 0; padding: 0; }
 
-.work_it { max-width: 372px; }
+.work_it { max-width: 500px; width: 46%; }
 .work_it a { display: block; height: 100%; width: 100%; background: transparent; }
 .work_it a:hover, .work_it a:focus, .work_it a:active { background: #c8c8c8; }
 .work_it a:hover .work_cap, .work_it a:focus .work_cap, .work_it a:active .work_cap { background: #282828; }
